@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Download RoboLogIQ</title>
+<meta name="description" content="RoboLogIQ – IoT device monitoring by Robolog Automation. Download the Android and Windows apps.">
+<link rel="icon" href="icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@500&family=IBM+Plex+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#F3F4F2;--card:#FFFFFF;--ink:#17212B;--ink2:#3D4852;--muted:#5E6A74;--line:#E1E5E3;--brand:#383E42;--yellow:#F9A800;--code:#F5F7F6;color-scheme:light}
+@media (prefers-color-scheme:dark){:root{--bg:#15191C;--card:#1E2428;--ink:#EEF1EF;--ink2:#C9CED2;--muted:#9AA4AB;--line:#2E363B;--brand:#2A2F33;--code:#161B1E;color-scheme:dark}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:'IBM Plex Sans','Segoe UI',Helvetica,Arial,sans-serif;line-height:1.55}
+header{background:#383E42;color:#fff;padding:28px 16px 32px;border-bottom:4px solid var(--yellow)}
+.wrap{max-width:880px;margin:0 auto;padding-inline:16px}
+.logo{display:flex;align-items:center;gap:12px}
+.logo .robo{font-size:11px;font-weight:600;letter-spacing:3.6px;color:#C9CED2;line-height:1}
+.logo .name{font-size:26px;font-weight:700;letter-spacing:-.3px;line-height:1.1}
+.logo .name b{color:var(--yellow);font-weight:700}
+header p{margin:14px 0 0;color:#D9DCD8;max-width:56ch}
+main{padding-block:28px 40px}
+.version{display:inline-flex;gap:8px;align-items:center;background:var(--card);border:1px solid var(--line);border-radius:999px;padding:6px 14px;font-size:14px;color:var(--ink2)}
+.version b{color:var(--ink)}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,360px),1fr));gap:18px;margin-top:18px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:22px;display:flex;flex-direction:column;gap:12px;min-width:0}
+.card h2{margin:0;font-size:20px}
+.card p{margin:0;color:var(--ink2)}
+.btn{display:inline-flex;justify-content:center;align-items:center;gap:8px;background:#383E42;color:#fff;text-decoration:none;font-weight:600;padding:13px 20px;border-radius:10px;border:0;font:inherit;font-weight:600;cursor:pointer}
+@media (prefers-color-scheme:dark){.btn{background:var(--yellow);color:#241A00}}
+.btn.ghost{background:transparent;color:var(--ink);border:1px solid var(--line)}
+ol{margin:0;padding-left:20px;color:var(--ink2)}
+ol li{margin:4px 0}
+.cmd{display:flex;gap:8px;align-items:stretch}
+.cmd code{flex:1;min-width:0;overflow-x:auto;white-space:nowrap;background:var(--code);border:1px solid var(--line);border-radius:8px;padding:10px 12px;font-family:'IBM Plex Mono',Consolas,monospace;font-size:13.5px}
+.small{font-size:13.5px;color:var(--muted)}
+.notes{white-space:pre-line}
+footer{border-top:1px solid var(--line);padding-block:18px;color:var(--muted);font-size:13.5px}
+footer .wrap{display:flex;flex-wrap:wrap;gap:8px 18px;justify-content:space-between}
+a{color:inherit}
+</style>
+</head>
+<body>
+<header>
+  <div class="wrap">
+    <div class="logo" aria-label="RoboLogIQ">
+      <div><div class="robo">ROBO</div><div class="name">Log<b>IQ</b></div></div>
+    </div>
+    <p>Watch your machines live, get alerts the moment something goes wrong, and receive reports by email.</p>
+  </div>
+</header>
+<main class="wrap">
+  <span class="version">Newest version <b id="ver">…</b> <span id="date"></span></span>
+  <div class="grid">
+    <section class="card" aria-labelledby="a-h">
+      <h2 id="a-h">Android</h2>
+      <p>Phones and tablets with Android 7 or newer.</p>
+      <a class="btn" id="apk" href="https://github.com/RobologAutomation/robologiq-releases/releases/latest/download/robologiq.apk">Download for Android</a>
+      <ol class="small">
+        <li>Open the downloaded file.</li>
+        <li>If Android asks, allow your browser to install apps, then tap <b>Install</b>.</li>
+        <li>Later updates appear inside the app – tap <b>Update now</b>.</li>
+      </ol>
+    </section>
+    <section class="card" aria-labelledby="w-h">
+      <h2 id="w-h">Windows</h2>
+      <p>Windows 10 and 11. No administrator rights needed.</p>
+      <ol>
+        <li>Open <b>PowerShell</b> (Start menu → type "PowerShell").</li>
+        <li>Paste this line and press Enter:</li>
+      </ol>
+      <div class="cmd">
+        <code id="cmd">irm https://download.robologiot.co.in/install.ps1 | iex</code>
+        <button class="btn ghost" id="copy" type="button">Copy</button>
+      </div>
+      <p class="small">RoboLogIQ is installed, gets a Start-menu and desktop shortcut and opens. Later updates appear inside the app. To remove it: Settings → Apps → RoboLogIQ → Uninstall.</p>
+    </section>
+  </div>
+  <section class="card" style="margin-top:18px" id="notes-card" hidden>
+    <h2>What's new</h2>
+    <p class="notes" id="notes"></p>
+  </section>
+  <p class="small" style="margin-top:18px">Prefer the browser? Use RoboLogIQ on the web at <a href="https://robolog.robologiot.co.in">robolog.robologiot.co.in</a>.</p>
+</main>
+<footer>
+  <div class="wrap"><span>Robolog Automation</span><span>Help: robologautomation@gmail.com</span></div>
+</footer>
+<script>
+fetch('latest.json', {cache: 'no-store'}).then(r => r.json()).then(j => {
+  document.getElementById('ver').textContent = j.version || '';
+  if (j.date) document.getElementById('date').textContent = '· ' + j.date;
+  if (j.notes) { document.getElementById('notes').textContent = j.notes; document.getElementById('notes-card').hidden = false; }
+}).catch(() => { document.getElementById('ver').textContent = ''; });
+document.getElementById('copy').addEventListener('click', async e => {
+  const text = document.getElementById('cmd').textContent;
+  try { await navigator.clipboard.writeText(text); e.target.textContent = 'Copied'; }
+  catch { const r = document.createRange(); r.selectNodeContents(document.getElementById('cmd')); const s = getSelection(); s.removeAllRanges(); s.addRange(r); }
+  setTimeout(() => e.target.textContent = 'Copy', 2000);
+});
+</script>
+</body>
+</html>
