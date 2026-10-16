@@ -1,0 +1,18 @@
+{
+    "version":  "1.0.0",
+    "build":  1,
+    "date":  "16 Oct 2026",
+    "notes":  "First release of RoboLogIQ for Android, Windows and the web.",
+    "android":  {
+                    "url":  "https://github.com/RobologAutomation/robologiq-releases/releases/download/v1.0.0/robologiq.apk",
+                    "sha256":  "72225ab14e8cea3d70cab410c690c1751f43eb10fb146b10c7980a2622f5cf07"
+                },
+    "windows":  {
+                    "url":  "https://github.com/RobologAutomation/robologiq-releases/releases/download/v1.0.0/robologiq-windows.zip",
+                    "sha256":  "d19b3f3a050a771065609ca90dff556732ff41efd9eea3ad6d0b58a7b5e57311"
+                },
+    "web":  {
+                "url":  "https://github.com/RobologAutomation/robologiq-releases/releases/download/v1.0.0/robologiq-web.tar.gz",
+                "sha256":  "f9b74f27fd162e43ad4acefef55345bdb98d2b908644d31354a193949b1120ac"
+            }
+}
