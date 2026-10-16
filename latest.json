@@ -1,18 +1,18 @@
 {
-    "version":  "1.0.0",
-    "build":  1,
+    "version":  "1.0.1",
+    "build":  2,
     "date":  "16 Oct 2026",
-    "notes":  "First release of RoboLogIQ for Android, Windows and the web.",
+    "notes":  "Site cards show the installed date and a green Live sign.\nYou can leave a site that was shared with you (Site settings).\nTabs you cannot use are hidden.\nWindows: live readings connect more reliably.",
     "android":  {
-                    "url":  "https://github.com/RobologAutomation/robologiq-releases/releases/download/v1.0.0/robologiq.apk",
-                    "sha256":  "72225ab14e8cea3d70cab410c690c1751f43eb10fb146b10c7980a2622f5cf07"
+                    "url":  "https://github.com/RobologAutomation/robologiq-releases/releases/download/v1.0.1/robologiq.apk",
+                    "sha256":  "60b92be6d812946eae86aec9b598417ad5d2d6be0df09aa766266122a3bb9c3a"
                 },
     "windows":  {
-                    "url":  "https://github.com/RobologAutomation/robologiq-releases/releases/download/v1.0.0/robologiq-windows.zip",
-                    "sha256":  "d19b3f3a050a771065609ca90dff556732ff41efd9eea3ad6d0b58a7b5e57311"
+                    "url":  "https://github.com/RobologAutomation/robologiq-releases/releases/download/v1.0.1/robologiq-windows.zip",
+                    "sha256":  "da191dbfc3bf8c1f76d18589c0dda1318d242acae6895444b02e7bc02b00de01"
                 },
     "web":  {
-                "url":  "https://github.com/RobologAutomation/robologiq-releases/releases/download/v1.0.0/robologiq-web.tar.gz",
-                "sha256":  "f9b74f27fd162e43ad4acefef55345bdb98d2b908644d31354a193949b1120ac"
+                "url":  "https://github.com/RobologAutomation/robologiq-releases/releases/download/v1.0.1/robologiq-web.tar.gz",
+                "sha256":  "24d2cd70edafc7a96da3ec648f1e24f40712dfd0678c3d2d338a7011c55436ed"
             }
 }
