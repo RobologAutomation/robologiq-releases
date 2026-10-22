@@ -1,18 +1,18 @@
 {
-    "version":  "1.0.2",
-    "build":  3,
-    "date":  "21 Oct 2026",
-    "notes":  "Sites show \"No data since …\" and old values are greyed out, so you can see when a device stops sending.\nNew: emails when a site stops sending data and when it is back, and when an alert is back to normal.\nSite settings: choose which notifications you get (alerts, no data, reports) and how (phone, email).\nNew: My devices – add your Robolog Bridge and see if it is online.",
+    "version":  "1.0.3",
+    "build":  4,
+    "date":  "22 Oct 2026",
+    "notes":  "- Long site names now fit in the site switcher\r\n- \"How it will look\" shows the real widget when adding a reading\r\n- The website adapts to phone screens\r\n",
     "android":  {
-                    "url":  "https://github.com/RobologAutomation/robologiq-releases/releases/download/v1.0.2/robologiq.apk",
-                    "sha256":  "cafb76500ad8b5a474666431ac6893fbfa64fabaa58e1c80db7f5dc6009dfe4a"
+                    "url":  "https://github.com/RobologAutomation/robologiq-releases/releases/download/v1.0.3/robologiq.apk",
+                    "sha256":  "1c0577c09c28ccd3dc647b25b9d6723cc95e4f6e52c464d40149d016e8af7ca7"
                 },
     "windows":  {
-                    "url":  "https://github.com/RobologAutomation/robologiq-releases/releases/download/v1.0.2/robologiq-windows.zip",
-                    "sha256":  "5cfbfce06101ced348ad2751cbc6a3394ca096718dcb620bcf77cb323faa18a3"
+                    "url":  "https://github.com/RobologAutomation/robologiq-releases/releases/download/v1.0.3/robologiq-windows.zip",
+                    "sha256":  "5be9602a6a498d7c11ce936c7b915a2c1b428543325882097400da08f4e21e1c"
                 },
     "web":  {
-                "url":  "https://github.com/RobologAutomation/robologiq-releases/releases/download/v1.0.2/robologiq-web.tar.gz",
-                "sha256":  "64027d467ff0d950cbe81a3f8da4423390f4055daeb32f6e59c8ec25aa3d41e2"
+                "url":  "https://github.com/RobologAutomation/robologiq-releases/releases/download/v1.0.3/robologiq-web.tar.gz",
+                "sha256":  "261c2fb5b52d5a9a6f32d3b47a8c270750de80ae5f556bf67d3f9c6d6a6e8788"
             }
 }
