@@ -12,6 +12,7 @@
 :root{--bg:#F4F5F2;--card:#FFFFFF;--ink:#1E2327;--ink2:#41484D;--muted:#5D656A;--line:#DDDFDA;--bar:#383E42;--yellow:#F9A800;--amber:#7A5800;--code:#F5F7F6;--okbg:#E7F4EC;--ok:#155C39;color-scheme:light}
 @media (prefers-color-scheme:dark){:root{--bg:#15191C;--card:#1E2428;--ink:#EEF1EF;--ink2:#C9CED2;--muted:#9AA4AB;--line:#2E363B;--bar:#2A2F33;--amber:#FFD36B;--code:#161B1E;--okbg:#17352A;--ok:#9FE0BA;color-scheme:dark}}
 *{box-sizing:border-box}
+[hidden]{display:none!important}
 body{margin:0;background:var(--bg);color:var(--ink);font-family:'Atkinson Hyperlegible','Segoe UI',Helvetica,Arial,sans-serif;line-height:1.55}
 h1,h2,h3,.btn,.logo{font-family:Figtree,'Segoe UI',sans-serif}
 header{background:#383E42;color:#fff;padding:24px 0 28px;border-bottom:4px solid var(--yellow)}
@@ -48,7 +49,6 @@ ol li{margin:4px 0}
 .facts{display:grid;grid-template-columns:auto 1fr;gap:4px 14px;margin:0;font-size:14.5px}
 .facts dt{color:var(--muted)}
 .facts dd{margin:0;font-weight:700;overflow-wrap:anywhere}
-.hash{font-family:'IBM Plex Mono',Consolas,monospace;font-weight:500;font-size:12.5px}
 footer{border-top:1px solid var(--line);padding-block:18px;color:var(--muted);font-size:14px}
 footer .wrap{display:flex;flex-wrap:wrap;gap:8px 18px;justify-content:space-between}
 a{color:inherit}
@@ -84,7 +84,7 @@ a{color:inherit}
       <div class="card">
         <h3>Android</h3>
         <p>Phones and tablets with Android 7 or newer.</p>
-        <a class="btn" id="app-apk" href="https://github.com/RobologAutomation/robologiq-releases/releases/latest/download/robologiq.apk">Download for Android</a>
+        <a class="btn" id="app-apk" href="#app" hidden>Download for Android</a>
         <ol class="small">
           <li>Open the downloaded file.</li>
           <li>If Android asks, allow your browser to install apps, then tap <b>Install</b>.</li>
@@ -128,7 +128,7 @@ a{color:inherit}
       <div class="card">
         <h3>Android</h3>
         <p>Android phones with Bluetooth. Sign in with your installer account.</p>
-        <a class="btn yellow" id="c-apk" href="https://github.com/RobologAutomation/robologiq-releases/releases?q=connect">Download Connect for Android</a>
+        <a class="btn yellow" id="c-apk" href="#connect" hidden>Download Connect for Android</a>
         <ol class="small">
           <li>Open the downloaded file and tap <b>Install</b> (allow your browser to install apps if Android asks).</li>
           <li>On Samsung phones, turn off <b>Auto Blocker</b> first (Settings → Security).</li>
@@ -160,14 +160,12 @@ a{color:inherit}
         <p class="small">Connect checks the file before sending it. If an update stops part way, the device keeps its old firmware.</p>
       </div>
       <div class="card">
-        <h3>This version</h3>
+        <h3>Newest version</h3>
         <dl class="facts">
           <dt>Version</dt><dd id="f-ver2">…</dd>
           <dt>Size</dt><dd id="f-size">…</dd>
-          <dt>SHA-256</dt><dd class="hash" id="f-hash">…</dd>
         </dl>
         <p class="notes" id="f-notes"></p>
-        <a class="btn ghost" id="f-bin" href="https://github.com/RobologAutomation/robologiq-releases/releases?q=firmware">Download the .bin (for Robolog staff)</a>
       </div>
     </div>
   </section>
@@ -180,7 +178,7 @@ a{color:inherit}
 function feed(path) { return fetch(path + '?t=' + Date.now(), {cache: 'no-store'}).then(r => r.ok ? r.json() : Promise.reject(r.status)); }
 function set(id, text) { const el = document.getElementById(id); if (el) el.textContent = text; }
 function notes(cardId, id, text) { if (text && text.trim()) { set(id, text.trim()); const c = document.getElementById(cardId); if (c) c.hidden = false; } }
-function link(id, url) { const el = document.getElementById(id); if (el && /^https:\/\//.test(url || '')) el.href = url; }
+function link(id, url) { const el = document.getElementById(id); if (el && /^https:\/\//.test(url || '')) { el.href = url; el.hidden = false; } }
 
 feed('latest.json').then(j => {
   set('app-ver', j.version || ''); if (j.date) set('app-date', '· ' + j.date);
@@ -197,9 +195,7 @@ feed('connect/latest.json').then(j => {
 feed('firmware/latest.json').then(j => {
   set('f-ver', j.version || ''); set('f-ver2', j.version || '–'); if (j.date) set('f-date', '· ' + j.date);
   set('f-size', j.size ? Math.round(j.size / 1024) + ' KB' : '–');
-  set('f-hash', j.sha256 || '–');
   if (j.notes) set('f-notes', j.notes.trim());
-  link('f-bin', j.url);
 }).catch(() => set('f-ver', '–'));
 
 document.getElementById('copy').addEventListener('click', async e => {
