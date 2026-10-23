@@ -1,18 +1,18 @@
 {
-    "version":  "1.0.3",
-    "build":  4,
-    "date":  "22 Oct 2026",
-    "notes":  "- Long site names now fit in the site switcher\r\n- \"How it will look\" shows the real widget when adding a reading\r\n- The website adapts to phone screens\r\n",
+    "version":  "1.0.4",
+    "build":  5,
+    "date":  "23 Oct 2026",
+    "notes":  "- A banner on Home when a new version of the app is ready\r\n- Robolog Automation staff: devices that installers register show on Home, with \"Add the site\" built from the device readings\r\n",
     "android":  {
-                    "url":  "https://github.com/RobologAutomation/robologiq-releases/releases/download/v1.0.3/robologiq.apk",
-                    "sha256":  "1c0577c09c28ccd3dc647b25b9d6723cc95e4f6e52c464d40149d016e8af7ca7"
+                    "url":  "https://github.com/RobologAutomation/robologiq-releases/releases/download/v1.0.4/robologiq.apk",
+                    "sha256":  "76d9c56e834caadf5280516ed033cacbb222cf19ae4753bc3cfb0800cde5c8f5"
                 },
     "windows":  {
-                    "url":  "https://github.com/RobologAutomation/robologiq-releases/releases/download/v1.0.3/robologiq-windows.zip",
-                    "sha256":  "5be9602a6a498d7c11ce936c7b915a2c1b428543325882097400da08f4e21e1c"
+                    "url":  "https://github.com/RobologAutomation/robologiq-releases/releases/download/v1.0.4/robologiq-windows.zip",
+                    "sha256":  "74c13e4184a8ed41e8a9f49bef08a8a6574739a3631b49787958340d5975b6d0"
                 },
     "web":  {
-                "url":  "https://github.com/RobologAutomation/robologiq-releases/releases/download/v1.0.3/robologiq-web.tar.gz",
-                "sha256":  "261c2fb5b52d5a9a6f32d3b47a8c270750de80ae5f556bf67d3f9c6d6a6e8788"
+                "url":  "https://github.com/RobologAutomation/robologiq-releases/releases/download/v1.0.4/robologiq-web.tar.gz",
+                "sha256":  "6378ecc9f700e62609e0cd799a7afc42774f9fb2ebc35d73f235d4b36678afd4"
             }
 }
