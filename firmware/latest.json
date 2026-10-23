@@ -1,0 +1,8 @@
+{
+    "version":  "1.1.0",
+    "date":  "23 Oct 2026",
+    "notes":  "- First Robolog Bridge firmware published for RoboLogIQ Connect\r\n- Own MQTT topics per device (status, health, manifest), Wi-Fi scan and value tests from Connect\r\n- Fix: a large Bluetooth settings transfer could restart the device\r\n- Passwords hidden in logs and over MQTT\r\n",
+    "url":  "https://github.com/RobologAutomation/robologiq-releases/releases/download/firmware-v1.1.0/robolog-bridge-1.1.0.bin",
+    "size":  1360336,
+    "sha256":  "a110c66acf2154266157db458e99907d36cd36ac656ab2bfaa7a437c9caa9aa5"
+}
