@@ -1,18 +1,18 @@
 {
-    "version":  "1.0.4",
-    "build":  5,
+    "version":  "1.0.5",
+    "build":  6,
     "date":  "23 Oct 2026",
-    "notes":  "- A banner on Home when a new version of the app is ready\r\n- Robolog Automation staff: devices that installers register show on Home, with \"Add the site\" built from the device readings\r\n",
+    "notes":  "- Set up the site: choose a widget for each value the device reads (number, gauge, line, level bar, light, status or not shown)\n- New devices: Set up the site or Later; Later keeps them under Waiting for setup\n- Edit a widget: change what it shows, the same choices as adding one\n",
     "android":  {
-                    "url":  "https://github.com/RobologAutomation/robologiq-releases/releases/download/v1.0.4/robologiq.apk",
-                    "sha256":  "76d9c56e834caadf5280516ed033cacbb222cf19ae4753bc3cfb0800cde5c8f5"
+                    "url":  "https://github.com/RobologAutomation/robologiq-releases/releases/download/v1.0.5/robologiq.apk",
+                    "sha256":  "04b3f027819aa0430695374569876111ad1e7b712c57dfcb10df6c0a81e91eca"
                 },
     "windows":  {
-                    "url":  "https://github.com/RobologAutomation/robologiq-releases/releases/download/v1.0.4/robologiq-windows.zip",
-                    "sha256":  "74c13e4184a8ed41e8a9f49bef08a8a6574739a3631b49787958340d5975b6d0"
+                    "url":  "https://github.com/RobologAutomation/robologiq-releases/releases/download/v1.0.5/robologiq-windows.zip",
+                    "sha256":  "3c7d89beda1d5cb614e17583f786232ea3c1ac3825adafbbd7c61cc91e986a42"
                 },
     "web":  {
-                "url":  "https://github.com/RobologAutomation/robologiq-releases/releases/download/v1.0.4/robologiq-web.tar.gz",
-                "sha256":  "6378ecc9f700e62609e0cd799a7afc42774f9fb2ebc35d73f235d4b36678afd4"
+                "url":  "https://github.com/RobologAutomation/robologiq-releases/releases/download/v1.0.5/robologiq-web.tar.gz",
+                "sha256":  "c9fff10016fa8cf4e38aeb3818a9f7f4c9da4a67373febae4770eb2d85ed7dfd"
             }
 }
