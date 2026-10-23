@@ -1,8 +1,8 @@
 {
-    "version":  "1.1.2",
+    "version":  "1.1.3",
     "date":  "23 Oct 2026",
-    "notes":  "- Fix: settings written without the server login keep the stored login, so the device stays connected to RoboLogIQ\r\n",
-    "url":  "https://github.com/RobologAutomation/robologiq-releases/releases/download/firmware-v1.1.2/robolog-bridge-1.1.2.bin",
-    "size":  1360752,
-    "sha256":  "95601e7f15f9ca58fa9521044a53a288f4070ea77f5ce14e52057879852b482d"
+    "notes":  "- A factory reset keeps the RoboLogIQ server login, so a device set up again goes online\r\n- A device whose settings have no server login uses the remembered one when it starts\r\n",
+    "url":  "https://github.com/RobologAutomation/robologiq-releases/releases/download/firmware-v1.1.3/robolog-bridge-1.1.3.bin",
+    "size":  1365040,
+    "sha256":  "e3e9b7c2c5bb89b63817deea8416012e0c934b1ea52021d764afaef1e785fd12"
 }
