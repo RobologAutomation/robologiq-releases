@@ -1,10 +1,10 @@
 {
-    "version":  "1.0.2",
+    "version":  "1.0.3",
     "date":  "23 Oct 2026",
-    "notes":  "- Update now downloads and installs inside the app (no browser)\r\n- The update check always sees the newest version; Account shows it\r\n",
+    "notes":  "- Fix: saving never replaces the device\u0027s server login (a device could lose its connection to RoboLogIQ)\r\n- Changes kept on the phone no longer hold the server login\r\n",
     "android":  {
-                    "url":  "https://github.com/RobologAutomation/robologiq-releases/releases/download/connect-v1.0.2/robologiq-connect-1.0.2.apk",
-                    "size":  52730527,
-                    "sha256":  "f83622354f39d71a72614cb64c9b716188e60c522cecfc2dc7afdad8ffad21b8"
+                    "url":  "https://github.com/RobologAutomation/robologiq-releases/releases/download/connect-v1.0.3/robologiq-connect-1.0.3.apk",
+                    "size":  52746911,
+                    "sha256":  "9c531055cb25f11ca6450b67e10628561350283d358a97eb9a47960ea2d104ee"
                 }
 }
