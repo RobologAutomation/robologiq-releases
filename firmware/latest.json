@@ -1,8 +1,8 @@
 {
-    "version":  "1.1.1",
+    "version":  "1.1.2",
     "date":  "23 Oct 2026",
-    "notes":  "- Test of the Bluetooth firmware update from RoboLogIQ Connect\r\n- Same as 1.1.0 (only the version number changed)\r\n",
-    "url":  "https://github.com/RobologAutomation/robologiq-releases/releases/download/firmware-v1.1.1/robolog-bridge-1.1.1.bin",
-    "size":  1360336,
-    "sha256":  "0ad0a2ec89bba6d132539dab35240e0e0eb4db25e9a54a5fea9fa3355df5ded8"
+    "notes":  "- Fix: settings written without the server login keep the stored login, so the device stays connected to RoboLogIQ\r\n",
+    "url":  "https://github.com/RobologAutomation/robologiq-releases/releases/download/firmware-v1.1.2/robolog-bridge-1.1.2.bin",
+    "size":  1360752,
+    "sha256":  "95601e7f15f9ca58fa9521044a53a288f4070ea77f5ce14e52057879852b482d"
 }
