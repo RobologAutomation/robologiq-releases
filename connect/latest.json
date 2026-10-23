@@ -1,10 +1,10 @@
 {
-    "version":  "1.0.1",
+    "version":  "1.0.2",
     "date":  "23 Oct 2026",
-    "notes":  "- New look: Home with \"Find devices nearby\", one page per device, live values, live log\r\n- Every set-up step has Next; Back always returns to the device; progress is kept per device\r\n- Device name is RoboLogIQ IoT Device; you type the customer, the place and (if needed) a device number\r\n- Goes back to Home when the device disconnects; unsaved changes are kept\r\n",
+    "notes":  "- Update now downloads and installs inside the app (no browser)\r\n- The update check always sees the newest version; Account shows it\r\n",
     "android":  {
-                    "url":  "https://github.com/RobologAutomation/robologiq-releases/releases/download/connect-v1.0.1/robologiq-connect-1.0.1.apk",
-                    "size":  52376471,
-                    "sha256":  "78fd6d3362a7441cef734a36d1b521a750181f007e7ff5116ee3e9291b6097ff"
+                    "url":  "https://github.com/RobologAutomation/robologiq-releases/releases/download/connect-v1.0.2/robologiq-connect-1.0.2.apk",
+                    "size":  52730527,
+                    "sha256":  "f83622354f39d71a72614cb64c9b716188e60c522cecfc2dc7afdad8ffad21b8"
                 }
 }
