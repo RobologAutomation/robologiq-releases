@@ -1,10 +1,10 @@
 {
-    "version":  "1.0.0",
+    "version":  "1.0.1",
     "date":  "23 Oct 2026",
-    "notes":  "First release of RoboLogIQ Connect: set up Robolog Bridge devices over Bluetooth (Wi-Fi with network list, Ethernet, 4G), Modbus registers with templates and live tests, and firmware updates over Bluetooth. New app icon.\r\n",
+    "notes":  "- New look: Home with \"Find devices nearby\", one page per device, live values, live log\r\n- Every set-up step has Next; Back always returns to the device; progress is kept per device\r\n- Device name is RoboLogIQ IoT Device; you type the customer, the place and (if needed) a device number\r\n- Goes back to Home when the device disconnects; unsaved changes are kept\r\n",
     "android":  {
-                    "url":  "https://github.com/RobologAutomation/robologiq-releases/releases/download/connect-v1.0.0/robologiq-connect-1.0.0.apk",
-                    "size":  52228735,
-                    "sha256":  "dce5db8a77bc49a8bd814cc1c6f7bd5a42b473ddae7c95eac534ca3ff3526483"
+                    "url":  "https://github.com/RobologAutomation/robologiq-releases/releases/download/connect-v1.0.1/robologiq-connect-1.0.1.apk",
+                    "size":  52376471,
+                    "sha256":  "78fd6d3362a7441cef734a36d1b521a750181f007e7ff5116ee3e9291b6097ff"
                 }
 }
